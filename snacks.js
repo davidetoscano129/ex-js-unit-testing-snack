@@ -9,4 +9,10 @@ function createSlug(str) {
   return str.toLowerCase();
 }
 
-module.exports = { getInitials, createSlug };
+// Snack 3
+function average(array) {
+  const sum = array.reduce((acc, num) => acc + num, 0);
+  return sum / array.length;
+}
+
+module.exports = { getInitials, createSlug, average };
