@@ -4,7 +4,7 @@ function getInitials(nomeCompleto) {
   return `${nome.charAt(0).toUpperCase()}.${cognome.charAt(0).toUpperCase()}.`;
 }
 
-// Snack 2
+// Snack 2 first, Snack 4 now
 function createSlug(str) {
   return str.toLowerCase().replaceAll(" ", "-");
 }
@@ -15,4 +15,9 @@ function average(array) {
   return sum / array.length;
 }
 
-module.exports = { getInitials, createSlug, average };
+function isPalindrome(str) {
+  const strReversed = str.split("").reverse().join("");
+  return str === strReversed;
+}
+
+module.exports = { getInitials, createSlug, average, isPalindrome };
